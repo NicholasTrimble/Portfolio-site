@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nicholas Trimble — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER: menu button -->
+  <header class="site-header">
+    <button id="menuButton" class="menu-button" aria-controls="siteMenu" aria-expanded="false" aria-label="Open menu">
+      ☰
+    </button>
+  </header>
+
+  <!-- SIDE MENU -->
+  <nav id="siteMenu" class="side-menu" aria-hidden="true" role="navigation">
+    <button id="menuClose" class="menu-close" aria-label="Close menu">✕</button>
+    <ul class="menu-list">
+      <li><a href="#home" class="menu-link" data-nav>Home</a></li>
+      <li><a href="#about" class="menu-link" data-nav>About</a></li>
+      <li><a href="#featured" class="menu-link" data-nav>Portfolio</a></li>
+      <li><a href="resume.html" class="menu-link">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- BACKDROP -->
+  <div id="backdrop" class="backdrop" hidden></div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO: occupies full viewport. On load, elements animate in -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <!-- Hero animations use 'revealed' class applied on window.load -->
+        <h1 id="heroName" class="hero-name">Nicholas Trimble</h1>
+        <p id="heroTitle" class="hero-title">Software Engineer</p>
+
+        <div class="hero-cta">
+          <a href="#featured" class="btn btn-primary" id="featuredBtn">Featured</a>
+          <a href="resume.html" class="btn btn-secondary">Resume</a>
+
+      </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED / PROJECTS: hidden until scrolled into view -->
+    <section id="featured" class="section" data-animate data-stagger>
+      <div class="container">
+        <h2>Experience & Projects</h2>
+        <p class="muted">Click on a project to view it on GitHub.</p>
+
+        <div class="projects-grid">
+          <!-- Example project entries: replace with your repos and descriptions -->
+          <article class="project-card">
+            <h3><a href="https://github.com/USERNAME/project-one" target="_blank" rel="noopener">Greens Dental Lab</a></h3>
+            <p class="project-desc">Dental Lab Technician with extensive experience in training and supervising staff, 
+                producing precise dental prosthetics, and consistently meeting production goals. 
+                Known for attention to detail, problem-solving, and a decade of perfect attendance.
+                 </p>
+            <p class="project-stack"><strong>2015-Current</strong></p>
+          </article>
+
+          <article class="project-card">
+            <h3><a href="https://github.com/NicholasTrimble/Data-Pipeline-Analytics-project" target="_blank" rel="noopener">Data Pipeline and Analytics Dashboard</a></h3>
+            <p class="project-desc">Designed and implemented a complete ETL pipeline using Python, pandas, and SQLite. Generated realistic synthetic e-commerce datasets with Faker and transformed them for analysis. 
+                Built an interactive Streamlit dashboard to visualize key metrics such as total revenue, average order value, and daily user trends, providing actionable insights for business decisions.</p>
+            <p class="project-stack"><strong>Stack:</strong> Python · pandas · Streamlit · SQLite · Git</p>
+          </article>
+
+          <article class="project-card">
+            <h3><a href="https://github.com/NicholasTrimble/Capstone-edited-Mobile-android-app-project" target="_blank" rel="noopener">Vacation and Excursion Tracker App</a></h3>
+            <p class="project-desc">Developed a multi-screen Android app using Java and SQLite with Room persistence library to manage vacations and excursions offline. 
+                Implemented date alerts, sharing via email/SMS/clipboard, and optimized performance through pagination, indexing, and asynchronous operations. Gained hands-on experience in Android UI design, app deployment, and APK signing.</p>
+            <p class="project-stack"><strong>Stack:</strong> Java · Android Studio · SQLite · Git</p>
+          </article>
+
+          <article class="project-card">
+            <h3><a href="https://github.com/NicholasTrimble/Pc-shop-Java-Frameworks-project" target="_blank" rel="noopener">TechNick's Builds Backend App</a></h3>
+            <p class="project-desc">Created a backend system for a PC parts shop using Java, Spring Boot, and Spring Data JPA. Designed entities, repositories, services, and REST controllers to manage purchases, inventory, and validation. 
+                Implemented persistent sample data, full CRUD operations, and inventory threshold checks, integrating the backend with a locally-hosted web interface for interactive “Buy Now” functionality.</p>
+            <p class="project-stack"><strong>Stack:</strong> Java · Spring Boot · Spring Data JPA · Git</p>
+          </article>
+
+          <article class="project-card">
+            <h3><a href="https://github.com/NicholasTrimble/Assorted-Python-Projects" target="_blank" rel="noopener">Fun and Experimental Projects</a></h3>
+            <p class="project-desc">A collection of small, playful projects created just for fun and learning. 
+                Includes games, tools, and utilities like a calculator, blind auction simulator, coffee machine, higher/lower game, and tip calculator. 
+                This repository is constantly evolving—new experiments and mini-projects will be added regularly.</p>
+            <p class="project-stack"><strong>Stack:</strong> Python</p>
+          </article>
+
+            <article class="project-card">
+            <h3><a href="https://github.com/NicholasTrimble/Javascript-World-map-project" target="_blank" rel="noopener">World Map Project</a></h3>
+            <p class="project-desc">Built a responsive web application that displays and interacts with map data. 
+                Implemented features like clickable locations, location display, and Basic map navigation and information. Applied Angular components and services to create scalable, maintainable code.</p>
+            <p class="project-stack"><strong>Stack:</strong> Angular · HTML · CSS · Javascript</p>
+          </article>
+
+
+
+
+
+
+
+          <article class="project-card placeholder">
+            <h3>More coming soon</h3>
+            <p>Replace this with case studies or other project links.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT: hidden until scrolled into view -->
+    <section id="about" class="section" data-animate>
+      <div class="container">
+        <h2>About</h2>
+        <p class="muted">I’m Nicholas Trimble, a lifelong learner and aspiring software engineer. 
+            I enjoy coding, gaming, and spending time with my family. 
+            I’m passionate about learning new technologies and building projects that reflect my 
+            growth and curiosity.</p>
+
+        <div class="about-grid">
+          <div>
+            <h3>About me</h3>
+            <p><!-- EDIT: put your bio here -->Software engineer with a passion for building
+ practical and reliable applications. I enjoy
+ turning ideas into working software, from a
+ Python data pipeline dashboard to a
+ Java-based travel app. My background
+ includes 10 years as a Dental Lab Technician,
+ a precision-driven role where I honed
+ consistency, attention to detail, and
+ problem-solving—qualities I now bring to
+ coding every day. I am actively strengthening
+ myPython and Java expertise and excited to
+ contribute to a collaborative development
+ team focused on creating high-quality
+ software products.</p>
+          </div>
+
+          <div>
+            <h3>Education</h3>
+            <ul class="education-list">
+              <li><strong>Western Governors University</strong></li>
+              <li>Bachelors of Science in Software Engineering</li>
+              <li><strong>Certifications</strong></li>
+              <li>AWS Certified Cloud Practitioner</li>
+              <li>ITIL Foundation Certificate in IT Service Management</li>
+              <li>CompTIA Project+ Certification</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Nicholas Trimble — Built with HTML, CSS & JavaScript</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Nicholas Trimble</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .resume-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #000;
+      color: #1e90ff;
+    }
+
+    .back-link {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .pdf-wrapper {
+      max-width: 1100px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+    }
+
+    .pdf-wrapper embed {
+      width: 100%;
+      height: 90vh;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header class="resume-header">
+    <a href="index.html" class="back-link">← Back</a>
+    <h1 class="resume-name">Nicholas Trimble</h1>
+  <p class="resume-title">Software Engineer</p>
+  </header>
+
+
+  <main class="pdf-wrapper">
+  <embed src="resume.pdf" type="application/pdf">
+  <p>If the resume does not display, <a href="resume.pdf" target="_blank" rel="noopener">click here to open it</a>.</p>
+</main>
+</body>
+</html>
