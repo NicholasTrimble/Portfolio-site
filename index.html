@@ -24,7 +24,8 @@
       <li><a href="#home" class="menu-link" data-nav>Home</a></li>
       <li><a href="#about" class="menu-link" data-nav>About</a></li>
       <li><a href="#featured" class="menu-link" data-nav>Portfolio</a></li>
-      <li><a href="Nick's Resume.pdf" class="menu-link">Resume</a></li>
+      <li><a href="Backend Resume.pdf" class="menu-link">Resume</a>
+      <li><a href="Nick's Resume.pdf" class="menu-link">Data Engineering Resume</a></li>
     </ul>
   </nav>
 
@@ -37,11 +38,12 @@
     <section id="home" class="hero">
       <div class="hero-inner">
         <h1 id="heroName" class="hero-name">Nicholas Trimble</h1>
-        <p id="heroTitle" class="hero-title">Software Engineer</p>
+        <p id="heroTitle" class="hero-title">Software Engineer • Data & Backend Systems</p>
 
         <div class="hero-cta">
           <a href="#featured" class="btn btn-primary" id="featuredBtn">Featured</a>
-          <a href="Nick's Resume.pdf" class="btn btn-secondary">Resume</a>
+          <a href="Backend Resume.pdf" class="btn btn-secondary">Resume</a>
+          <a href="Nick's Resume.pdf" class ="btn btn-secondary">Data Engineering Resume</a>
           <a href="#about" class="btn btn-primary" id="aboutBtn">About Me</a>
         </div>
       </div>
@@ -54,11 +56,11 @@
         <div class="about-grid">
           <div>
             <p>
-              Hello. My name is Nicholas Trimble, a software engineer with a passion for building practical and reliable applications. 
-              I enjoy turning ideas into working software, from a Python data pipeline dashboard to a Java-based travel app. 
-              My background includes 10 years as a Dental Lab Technician, where I honed precision, attention to detail, and problem-solving—skills I bring to every project I work on. 
-              I am continually strengthening my expertise in Python and Java, exploring new technologies, and developing projects that reflect my growth and hands-on experience in software engineering.
+              Hello, my name is Nicholas Trimble. I’m a software engineer who enjoys working with data and building practical, backend-focused applications. 
+              I primarily work with Python and SQL to design APIs, process data, and build workflows, and I also use C# to develop structured backend services and APIs. 
+              I enjoy turning real datasets into reliable systems, focusing on clean design, maintainable code, and steady growth as an engineer.
             </p>
+
           </div>
 
           <div>
@@ -85,8 +87,79 @@
     <p class="muted">Click on a project to view it on GitHub or visit the live site.</p>
 
     <div class="projects-grid">
+
+
+      <article class="project-card">
+      <h3>
+        <a href="https://github.com/NicholasTrimble/CollectorAnalyticsTCG" 
+          target="_blank" 
+          rel="noopener">
+          Collector Analytics – MTG Market Data Platform
+        </a>
+      </h3>
+      <p class="project-desc">
+        Built a full analytics pipeline using public MTG data, cleaned and loaded over 36k trading cards into a structured dataset, and developed an interactive dashboard for price exploration, rarity trends, and historical card insights. The app includes filtering, card detail previews, and a personal watchlist feature for tracking price movement over time.
+      </p>
+      <p class="project-stack">
+        <strong>Stack:</strong> Python · pandas · Streamlit · FastAPI · SQLite
+      </p>
+      <div>
+        <a href="https://collectoranalyticstcg.streamlit.app/" 
+          target="_blank">
+          Live Site
+        </a>
+      </div>
+    </article>
+
       
       
+
+        <article class="project-card">
+            <h3>
+              <a href="https://github.com/NicholasTrimble/MusicInsights-Spotify-ETL-Analytics-and-AI" target="_blank" rel="noopener">
+                MusicInsights – Spotify ETL, Analytics & AI
+              </a>
+            </h3>
+            <p class="project-desc">
+              Built a full ETL pipeline to clean and transform a 230k-row Spotify dataset, then created an interactive Streamlit dashboard with genre insights, audio feature visualizations, and a lightweight AI assistant powered by OpenAI for simple dataset questions.
+            </p>
+            <p class="project-stack"><strong>Stack:</strong> Python · pandas · Streamlit · SQLite · OpenAI</p>
+            <div><a href="https://musicinsights.streamlit.app/" target="_blank">Live Site</a></div>
+          </article>
+
+          <article class="project-card">
+        <h3>
+          <a href="https://github.com/NicholasTrimble/ISS_etl_pipeline" target="_blank" rel="noopener">
+            SkyPulse: Real-Time ISS and Weather Tracking
+          </a> | 
+          
+        </h3>
+        <p class="project-desc">
+          Built an automated ETL pipeline to pull live ISS location data, add overhead/night-time flags, and store in SQLite. Created an interactive Flask dashboard combining ISS position with real-time weather data. Scheduled data collection every 10 minutes and added user subscriptions with dynamic email notifications.
+        </p>
+        <p class="project-stack"><strong>Stack:</strong> Python · Flask · SQLite · API Integration · Git</p>
+      <div><a href="https://skypulse.pythonanywhere.com/" target="_blank">
+            Live Site
+          </a></div>
+      </article>
+
+
+        <article class="project-card">
+          <h3>
+            <a href="https://github.com/NicholasTrimble/Data-Lux" target="_blank" rel="noopener">
+              Data Lux – AI Email Insights Dashboard
+            </a>
+          </h3>
+          <p class="project-desc">
+            Built a modular Python ETL pipeline to ingest and analyze thousands of emails, then created a Streamlit dashboard with sentiment statistics, message type breakdowns, and an integrated AI assistant for quick summaries and insights.
+          </p>
+          <p class="project-stack"><strong>Stack:</strong> Python · SQLite · Streamlit · OpenAI</p>
+          <div><a href="https://data-lux.streamlit.app" target="_blank">Live Site</a></div>
+        </article>
+
+
+
+
       <article class="project-card">
         <h3>
           <a href="https://github.com/NicholasTrimble/AutoBrief" target="_blank" rel="noopener">
@@ -122,29 +195,9 @@
       </article>
 
       
-      <article class="project-card">
-        <h3>
-          <a href="https://github.com/NicholasTrimble/ISS_etl_pipeline" target="_blank" rel="noopener">
-            SkyPulse: Real-Time ISS and Weather Tracking
-          </a> | 
-          
-        </h3>
-        <p class="project-desc">
-          Built an automated ETL pipeline to pull live ISS location data, add overhead/night-time flags, and store in SQLite. Created an interactive Flask dashboard combining ISS position with real-time weather data. Scheduled data collection every 10 minutes and added user subscriptions with dynamic email notifications.
-        </p>
-        <p class="project-stack"><strong>Stack:</strong> Python · Flask · SQLite · API Integration · Git</p>
-      <div><a href="https://skypulse.pythonanywhere.com/" target="_blank">
-            Live Site
-          </a></div>
-      </article>
+      
 
-          
-          <article class="project-card">
-            <h3><a href="https://github.com/NicholasTrimble/Data-Pipeline-Analytics-project" target="_blank" rel="noopener">
-                Data Pipeline and Analytics Dashboard</a></h3>
-            <p class="project-desc">Designed and implemented a complete ETL pipeline using Python, pandas, and SQLite. Generated realistic synthetic datasets and built a Streamlit dashboard to visualize key metrics for actionable insights.</p>
-            <p class="project-stack"><strong>Stack:</strong> Python · pandas · Streamlit · SQLite</p>
-          </article>
+
 
           <article class="project-card">
             <h3><a href="https://github.com/NicholasTrimble/Capstone-edited-Mobile-android-app-project" target="_blank" rel="noopener">
