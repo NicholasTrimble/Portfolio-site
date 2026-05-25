@@ -1,4 +1,4 @@
-![Nicholas Trimble — Portfolio](https://nicholastrimble.netlify.app/images/nick-trimble-portfolio-banner.png)
+![Nicholas Trimble — Portfolio](images\logo.png)
 
 Nicholas Trimble — Portfolio
 
