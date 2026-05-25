@@ -22,7 +22,7 @@
       <li><a href="#home" class="menu-link" data-nav>Home</a></li>
       <li><a href="#about" class="menu-link" data-nav>About</a></li>
       <li><a href="#featured" class="menu-link" data-nav>Portfolio</a></li>
-      <li><a href="Nick's Resume.pdf" class="menu-link">Resume</a></li>
+      <li><a href="MyResume.pdf" class="menu-link">Resume</a></li>
     </ul>
   </nav>
 
@@ -36,7 +36,7 @@
 
         <div class="hero-cta">
           <a href="#featured" class="btn btn-primary" id="featuredBtn">Featured</a>
-          <a href="Nick's Resume.pdf" class ="btn btn-secondary">Resume</a>
+          <a href="MyResume.pdf" class ="btn btn-secondary">Resume</a>
           <a href="#about" class="btn btn-primary" id="aboutBtn">About Me</a>
         </div>
       </div>
@@ -73,91 +73,147 @@
     </section>
 
     <section id="featured" class="section" data-animate data-stagger>
-      <div class="container">
-        <h2>Experience & Projects</h2>
-        <p class="muted">Click on a project to view it on GitHub.</p>
+  <div class="container">
+    <h2>Backend Systems & Data Projects</h2>
+    <p class="muted">
+      Full-stack backend systems built with C#/.NET and Python, focused on real-time workflows, data modeling, and operational analytics.
+    </p>
 
-        <div class="projects-grid">
+    <div class="projects-grid">
 
-          <article class="project-card">
-            <h3>
-              <a href="https://github.com/NicholasTrimble/NDX-Doctor-Dashboard" target="_blank" rel="noopener">
-                NDX Doctor Analytics Dashboard
-              </a>
-            </h3>
-            <p class="project-desc">
-              An internal production tool developed for NDX Greens Dental to track remake trends and identify lab bottlenecks. Built an automated sorting system for defect categorization and a risk assessment module for account retention.
-            </p>
-            <p class="project-stack">
-              <strong>Stack:</strong> Python · Django · JavaScript · Chart.js · PostgreSQL
-            </p>
-            <div>
-              <a href="https://github.com/NicholasTrimble/NDX-Doctor-Dashboard" target="_blank">View Repo</a>
-            </div>
-          </article>
+      <!-- ===================== -->
+      <!-- .NET CORE SYSTEMS -->
+      <!-- ===================== -->
 
-          <article class="project-card">
-            <h3>
-              <a href="https://github.com/NicholasTrimble/IT-Service-Desk" target="_blank" rel="noopener">
-                IT Service Desk | Ticketing System
-              </a>
-            </h3>
-            <p class="project-desc">
-              Full stack ticketing system featuring secure ASP.NET Core Identity authentication. Implemented custom C# backend logic for a ticket claim system, dynamic LINQ searching, and a modern enterprise dark theme.
-            </p>
-            <p class="project-stack">
-              <strong>Stack:</strong> C# · ASP.NET Core MVC · SQL Server · EF Core · Bootstrap 5
-            </p>
-            <div>
-              <a href="https://github.com/NicholasTrimble/IT-Service-Desk" target="_blank">View Repo</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>
-              <a href="https://github.com/NicholasTrimble/MetaNexus" target="_blank" rel="noopener">
-                MetaNexus | TCG Deck Builder
-              </a>
-            </h3>
-            <p class="project-desc">
-              Data management platform utilizing the Scryfall API to ingest 30k+ records. Features real time community chat via WebSockets and Redis, alongside a JavaScript driven search engine for instant database filtering.
-            </p>
-            <p class="project-stack">
-              <strong>Stack:</strong> Python · Django · JavaScript · Redis · WebSockets
-            </p>
-            <div>
-              <a href="https://nicktrimble.pythonanywhere.com/" target="_blank">Live Site</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>
-              <a href="https://github.com/NicholasTrimble/ISS_etl_pipeline" target="_blank" rel="noopener">
-                SkyPulse: Real-Time ISS Tracking
-              </a>
-            </h3>
-            <p class="project-desc">
-              Automated ETL pipeline extracting live ISS telemetry and global weather data. Features a Flask dashboard with user subscriptions and automated email notifications for overhead tracking.
-            </p>
-            <p class="project-stack"><strong>Stack:</strong> Python · Flask · SQLite · REST APIs</p>
-            <div><a href="https://skypulse.pythonanywhere.com/" target="_blank">Live Site</a></div>
-          </article>
-
-          <article class="project-card">
-            <h3><a href="https://github.com/NicholasTrimble/Capstone-edited-Mobile-android-app-project" target="_blank" rel="noopener">
-                Vacation Tracker Mobile App</a></h3>
-            <p class="project-desc">Multi screen Android application developed in Java featuring Room persistence, automated alerts, and asynchronous data operations.</p>
-            <p class="project-stack"><strong>Stack:</strong> Java · Android Studio · SQLite</p>
-          </article>
-
-          <article class="project-card placeholder">
-            <h3>Future Project: TalentLink</h3>
-            <p>Advanced C# Job Search Tracker & API (In Development)</p>
-            <p class="project-stack"><strong>Stack:</strong> .NET 10 · Web API · Angular</p>
-          </article>
+      <article class="project-card">
+        <h3>
+          <a href="https://hospitalflow.onrender.com/" target="_blank" rel="noopener">
+            HospitalFlow | Real-Time Hospital Resource System
+          </a>
+        </h3>
+        <p class="project-desc">
+          Built a real-time operational system using ASP.NET Core and SignalR to synchronize hospital room and equipment state across multiple clients.
+          Designed around live state propagation, preventing conflicting updates in shared resource environments.
+        </p>
+        <p class="project-stack">
+          <strong>Stack:</strong> C# · ASP.NET Core MVC · SignalR · EF Core · PostgreSQL · Docker
+        </p>
+        <div>
+          <a href="https://github.com/NicholasTrimble/HospitalFlow" target="_blank">View Code</a>
+          <p> </p>
+          <a href="https://hospitalflow.onrender.com/" target="_blank">Live Site</a>
         </div>
-      </div>
-    </section>
+      </article>
+
+      <article class="project-card">
+        <h3>
+          <a href="https://incidentlink.onrender.com/" target="_blank" rel="noopener">
+            IncidentLink | Emergency Dispatch & Resource Allocation System
+          </a>
+        </h3>
+        <p class="project-desc">
+          Designed a dispatch system for assigning and tracking emergency resources in real time.
+          Implemented concurrency-safe assignment rules to prevent double-booking and ensure consistent state during simultaneous updates.
+        </p>
+        <p class="project-stack">
+          <strong>Stack:</strong> C# · ASP.NET Core MVC · SignalR · EF Core · PostgreSQL
+        </p>
+        <div>
+          <a href="https://github.com/NicholasTrimble/IncidentLink" target="_blank">View Code</a>
+          <p> </p>
+          <a href="https://incidentlink.onrender.com/" target="_blank">Live Site</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>
+          <a href="https://github.com/NicholasTrimble/IT-Service-Desk" target="_blank" rel="noopener">
+            AssetOperations | Work Order & Asset Lifecycle System
+          </a>
+        </h3>
+        <p class="project-desc">
+          Built a structured work order system for tracking asset lifecycle and operational history in a facility environment.
+          Implemented service-layer architecture, authentication via ASP.NET Core Identity, and audit logging for state transitions.
+        </p>
+        <p class="project-stack">
+          <strong>Stack:</strong> C# · ASP.NET Core MVC · EF Core · SQL Server · Identity
+        </p>
+        <div>
+          <a href="https://github.com/NicholasTrimble/IT-Service-Desk" target="_blank">View Repo</a>
+        </div>
+      </article>
+
+      <!-- ===================== -->
+      <!-- PYTHON / DATA SYSTEMS -->
+      <!-- ===================== -->
+
+      <article class="project-card">
+        <h3>
+          <a href="https://skypulse.pythonanywhere.com" target="_blank" rel="noopener">
+            SkyPulse | ETL & Real-Time Data Pipeline System
+          </a>
+        </h3>
+        <p class="project-desc">
+          Built a Python-based ETL pipeline that ingests ISS telemetry data at scheduled intervals and combines it with external weather APIs.
+          Designed to demonstrate data collection, transformation, and visualization workflows.
+        </p>
+        <p class="project-stack">
+          <strong>Stack:</strong> Python · Flask · SQLite · REST APIs
+        </p>
+        <div>
+          <a href="https://skypulse.pythonanywhere.com" target="_blank">Live Site</a>
+          <p> </p>
+          <a href="https://skypulse.pythonanywhere.com" target="_blank">Live Site</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>
+          <a href="https://github.com/NicholasTrimble/MetaNexus" target="_blank" rel="noopener">
+            MetaNexus | Real-Time Data & Collaboration Platform
+          </a>
+        </h3>
+        <p class="project-desc">
+          Built a real-time application using Django and WebSockets for live data updates and user interaction.
+          Processed large external datasets (30k+ records) with API ingestion, rate limiting, and structured storage.
+        </p>
+        <p class="project-stack">
+          <strong>Stack:</strong> Python · Django · Redis · WebSockets · JavaScript
+        </p>
+        <div>
+          <a href="https://github.com/NicholasTrimble/MetaNexus" target="_blank">View Code</a>
+          <p> </p>
+          <a href="https://metanexus.pythonanywhere.com" target="_blank">Live Site</a>
+        </div>
+      </article>
+
+      <!-- ===================== -->
+      <!-- PROTOTYPE / ANALYTICS -->
+      <!-- ===================== -->
+
+      <article class="project-card">
+        <h3>
+          <a href="https://remakeanalytics.pythonanywhere.com" target="_blank" rel="noopener">
+            Retention & Remake Analytics System (Prototype – Live Preview)
+          </a>
+        </h3>
+        <p class="project-desc">
+          Prototype analytics system built to explore automated identification of high-risk accounts using synthetic lab QA data.
+          Generates AI-assisted retention suggestions based on recurring defect patterns and operational trends.
+        </p>
+        <p class="project-stack">
+          <strong>Stack:</strong> Python · Django · Chart.js · Google Gemini API · SQLite
+        </p>
+        <div>
+          <a href="https://github.com/NicholasTrimble/lab_analytics" target="_blank">View Code</a>
+          <p> </p>
+          <a href="https://remakeanalytics.pythonanywhere.com" target="_blank">Live Site</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
 
     <section id="games">
       <h2>Pass the time with a game</h2>
