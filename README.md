@@ -1,4 +1,4 @@
-![Nicholas Trimble — Portfolio](images\logo.png)
+![Portfolio Logo](images\logo.png)
 
 Nicholas Trimble — Portfolio
 
