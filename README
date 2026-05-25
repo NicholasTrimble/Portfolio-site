@@ -1,2 +1,74 @@
-![Portfolio-Site](images/Portfolio.png)
-Hello and thank you for previewing my Portfolio. I hope you find it engaging and informative.
+# Nicholas Trimble — Portfolio
+
+![Portfolio Site Logo](./images/portfolio-site-logo.png)
+
+## Overview
+
+This is my personal software engineering portfolio showcasing full-stack applications, backend systems, and data-driven tools built with C#, Python, and JavaScript.
+
+I focus on building **backend systems, real-time applications, and data processing workflows** that solve real operational problems.
+
+---
+
+## 🚀 Featured Work
+
+### 🏥 HospitalFlow — Real-Time Hospital Resource System
+ASP.NET Core MVC • SignalR • EF Core • PostgreSQL  
+Real-time system for synchronizing hospital resources and preventing conflicting updates across users.
+
+### 🚨 IncidentLink — Emergency Dispatch System
+ASP.NET Core MVC • SignalR • PostgreSQL  
+Dispatch and resource allocation system with concurrency-safe assignment logic and real-time updates.
+
+### 🛠 AssetOperations — Work Order Tracking System
+ASP.NET Core MVC • EF Core • SQL Server  
+Asset lifecycle tracking system using service-layer architecture, authentication, and audit logging.
+
+### 📊 Python Data Systems
+Django • Flask • ETL Pipelines • APIs  
+Built data pipelines and dashboards for transforming operational data into analytics and visual insights.
+
+---
+
+## 🧠 Technical Focus
+
+- Backend System Design
+- Real-time applications (SignalR / WebSockets)
+- Database design & EF Core modeling
+- ETL pipelines and data workflows
+- API integration and automation
+
+---
+
+## 🛠 Tech Stack
+
+**C# / .NET**
+- ASP.NET Core MVC
+- Entity Framework Core
+- SignalR
+- SQL Server
+
+**Python**
+- Django
+- Flask
+- Pandas
+- REST APIs
+
+**Tools**
+- Docker
+- PostgreSQL
+- Git / GitHub
+- Linux
+
+---
+
+## 🔗 Portfolio
+
+Live Site: https://nicholastrimble.netlify.app
+
+---
+
+## 📫 Contact
+
+- Email: nicktrimble07@gmail.com
+- LinkedIn: https://linkedin.com/in/nick-trimble
