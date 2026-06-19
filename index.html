@@ -8,8 +8,6 @@
 </head>
 <body>
 
-<canvas id="lightning-canvas" aria-hidden="true"></canvas>
-
   <header class="site-header">
     <button id="menuButton" class="menu-button" aria-controls="siteMenu" aria-expanded="false" aria-label="Open menu">
       ☰
@@ -22,219 +20,259 @@
       <li><a href="#home" class="menu-link" data-nav>Home</a></li>
       <li><a href="#about" class="menu-link" data-nav>About</a></li>
       <li><a href="#featured" class="menu-link" data-nav>Portfolio</a></li>
-      <li><a href="MyResume.pdf" class="menu-link">Resume</a></li>
     </ul>
   </nav>
 
   <div id="backdrop" class="backdrop" hidden></div>
 
   <main>
+    <!-- HERO SECTION (WITH LOAD ANIMATION HOOKS) -->
     <section id="home" class="hero">
       <div class="hero-inner">
-        <h1 id="heroName" class="hero-name">Nicholas Trimble</h1>
-        <p id="heroTitle" class="hero-title">Software Engineer</p>
-
+        <nav class="hero-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#featured">Portfolio</a>
+        </nav>
+        <h1 id="heroName" class="hero-name">NICHOLAS TRIMBLE</h1>
+        <p id="heroTitle" class="hero-title">A SOFTWARE ENGINEER & DATA ANALYST</p>
+        <p class="hero-subtitle">Building resilient digital interactions by focusing on the reliable architectures which bring systems to life.</p>
+        
         <div class="hero-cta">
-          <a href="#featured" class="btn btn-primary" id="featuredBtn">Featured</a>
-          <a href="MyResume.pdf" class ="btn btn-secondary">Resume</a>
-          <a href="#about" class="btn btn-primary" id="aboutBtn">About Me</a>
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="#featured" class="btn btn-secondary">View Portfolio</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section" data-animate>
+    <!-- ABOUT SECTION WITH FROSTED GLASS & INFINITE ROTATING SKILLS CAROUSEL -->
+    <section id="about" class="about-section">
       <div class="container">
-        <h2>About Me</h2>
-        <div class="about-grid">
-          <div>
-            <p>
-              Hello, my name is Nicholas Trimble. I am a software engineer focused on building structured backend services and APIs with <strong>C# and the .NET ecosystem</strong>, while leveraging a strong foundation in <strong>Python</strong> for data pipelines and web automation. 
-            </p>
-            <p>
-              I specialize in turning real world datasets into reliable systems, focusing on clean design, maintainable code, and solving operational bottlenecks through software. I enjoy the challenge of learning new technical stacks quickly to build practical tools that improve business efficiency.
-            </p>
-          </div>
-
-          <div>
-            <h3>Education & Certifications</h3>
-            <ul class="education-list">
-              <li><strong>Western Governors University</strong></li>
-              <li>B.S. in Software Engineering (2025)</li>
-              <li><strong>Arkansas State University</strong></li>
-              <li>Associate of Arts</li>
-              <li><strong>Certifications</strong></li>
-              <li>AWS Cloud Practitioner</li>
-              <li>ITIL 4 Foundation</li>
-              <li>CompTIA Project+</li>
+        <div class="about-glass-card" data-animate>
+          <h2>About Me</h2>
+          <p class="about-intro">
+             Hello, my name is Nicholas Trimble. I am a software engineer and data analyst focused on building full stack systems, 
+             data pipelines, and reporting solutions using C# and the .NET ecosystem, while leveraging a strong 
+             foundation in Python for analytics, automation, and data processing.
+            I specialize in turning real world data into reliable systems and actionable insights, 
+            focusing on clean design, maintainable code, and solving operational bottlenecks through software. 
+            I enjoy learning new technologies and applying them to practical business problems, whether that involves 
+            building applications, automating workflows, or developing dashboards that support better decision making. 
+          </p>
+          
+          <div class="about-details">
+            <ul>
+              <li><strong>Core Technologies:</strong></li>
+              <li>• Languages: C#, Python, SQL, JavaScript</li>
+              <li>• Tools/Frameworks: ASP.NET Core MVC, Entity Framework Core, SignalR, Docker</li>
+              <li>• Databases: PostgreSQL, Microsoft SQL Server, SQLite, Redis</li>
+              <li>• Analyst Tools: Pandas, NumPy, Power BI, REST APIs</li>
             </ul>
           </div>
+
+          <p class="about-outro">
+            Through practical systems engineering, I regularly collaborate to ship web applications, focusing on robust concurrency, relational consistency, and performance metrics.
+          </p>
+
+          <h3 class="skills-heading">Skills and Technologies</h3>
+          
+          <!-- INFINITE AUTOMATED CAROUSEL TRACK -->
+          <div class="marquee-container">
+            <div class="marquee-content">
+              <span class="tech-icon-badge text-csharp">C#</span>
+              <span class="tech-icon-badge text-dotnet">.NET Core</span>
+              <span class="tech-icon-badge text-efcore">EF Core</span>
+              <span class="tech-icon-badge text-signalr">SignalR</span>
+              <span class="tech-icon-badge text-python">Python</span>
+              <span class="tech-icon-badge text-django">Django</span>
+              <span class="tech-icon-badge text-powerbi">Power BI</span>
+              <span class="tech-icon-badge text-pandas">Pandas</span>
+              <span class="tech-icon-badge text-etl">ETL Pipelines</span>
+              <span class="tech-icon-badge text-sql">SQL Server</span>
+              <span class="tech-icon-badge text-postgres">PostgreSQL</span>
+              <span class="tech-icon-badge text-redis">Redis</span>
+              <span class="tech-icon-badge text-docker">Docker</span>
+              <span class="tech-icon-badge text-api">REST APIs</span>
+              
+              <span class="tech-icon-badge text-csharp">C#</span>
+              <span class="tech-icon-badge text-dotnet">.NET Core</span>
+              <span class="tech-icon-badge text-efcore">EF Core</span>
+              <span class="tech-icon-badge text-signalr">SignalR</span>
+              <span class="tech-icon-badge text-python">Python</span>
+              <span class="tech-icon-badge text-django">Django</span>
+              <span class="tech-icon-badge text-powerbi">Power BI</span>
+              <span class="tech-icon-badge text-pandas">Pandas</span>
+              <span class="tech-icon-badge text-etl">ETL Pipelines</span>
+              <span class="tech-icon-badge text-sql">SQL Server</span>
+              <span class="tech-icon-badge text-postgres">PostgreSQL</span>
+              <span class="tech-icon-badge text-redis">Redis</span>
+              <span class="tech-icon-badge text-docker">Docker</span>
+              <span class="tech-icon-badge text-api">REST APIs</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section id="featured" class="section" data-animate data-stagger>
-  <div class="container">
-    <h2>Backend Systems & Data Projects</h2>
-    <p class="muted">
-      Full-stack backend systems built with C#/.NET and Python, focused on real-time workflows, data modeling, and operational analytics.
-    </p>
+    <!-- PROJECT SHOWCASE BLOCKS -->
+    <section id="featured" class="project-showcase-section">
+      
+      <!-- BLOCK A: .NET CORE SYSTEMS (CRIMSON BLOCK) -->
+      <div class="project-block block-crimson" data-animate data-stagger>
+        <div class="container">
+          <h2 class="block-section-heading">.NET Core Systems</h2>
+          <p class="block-section-muted">High-concurrency real-time engines, event propagation, and domain architecture layers.</p>
+          
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="card-content">
+                <h3>AssetOperations | Work Order & Asset Lifecycle System</h3>
+                <p class="project-desc">Built a structured work order system for tracking asset lifecycle and operational history in a facility environment. Implemented service-layer architecture, authentication via ASP.NET Core Identity, and audit logging for state transitions.</p>
+              </div>
+              <div class="card-footer">
+                <p class="project-stack">C# · ASP.NET Core MVC · EF Core · SQL Server · Identity</p>
+                <div class="card-links">
+                  <a href="https://github.com/NicholasTrimble/IT-Service-Desk" target="_blank" rel="noopener">View Repo ↗</a>
+                </div>
+              </div>
+            </article>
 
-    <div class="projects-grid">
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="card-content">
+                <h3>SkyPulse Enterprise | Space Weather Telemetry Platform</h3>
+                <p class="project-desc">Built an ASP.NET Core platform that collects, stores, and analyzes live space weather telemetry data. Uses background services, Azure SQL, and reporting dashboards to track solar activity and operational risk indicators.</p>
+              </div>
+              <div class="card-footer">
+                <p class="project-stack">C# · ASP.NET Core MVC · Azure SQL · EF Core · Power BI</p>
+                <div class="card-links">
+                  <a href="https://github.com/NicholasTrimble/SkyPulse-Enterprise" target="_blank" rel="noopener">Code</a>
+                  <a href="https://skypulseweb-abdndfa8bsasgwhh.centralus-01.azurewebsites.net" target="_blank" rel="noopener">Live Site ↗</a>
+                </div>
+              </div>
+            </article>
 
-      <!-- ===================== -->
-      <!-- .NET CORE SYSTEMS -->
-      <!-- ===================== -->
+            <!-- Project 3 -->
+            <article class="project-card">
+              <div class="card-content">
+                <h3>HospitalFlow | Real-Time Hospital Resource System</h3>
+                <p class="project-desc">Built a real-time operational system using ASP.NET Core and SignalR to synchronize hospital room and equipment state across multiple clients. Designed around live state propagation, preventing conflicting updates.</p>
+              </div>
+              <div class="card-footer">
+                <p class="project-stack">C# · ASP.NET Core MVC · SignalR · EF Core · PostgreSQL · Docker</p>
+                <div class="card-links">
+                  <a href="https://github.com/NicholasTrimble/HospitalFlow" target="_blank" rel="noopener">Code</a>
+                  <a href="https://hospitalflow.onrender.com/" target="_blank" rel="noopener">Live Site ↗</a>
+                </div>
+              </div>
+            </article>
 
-      <article class="project-card">
-        <h3>
-          <a href="https://hospitalflow.onrender.com/" target="_blank" rel="noopener">
-            HospitalFlow | Real-Time Hospital Resource System
-          </a>
-        </h3>
-        <p class="project-desc">
-          Built a real-time operational system using ASP.NET Core and SignalR to synchronize hospital room and equipment state across multiple clients.
-          Designed around live state propagation, preventing conflicting updates in shared resource environments.
-        </p>
-        <p class="project-stack">
-          <strong>Stack:</strong> C# · ASP.NET Core MVC · SignalR · EF Core · PostgreSQL · Docker
-        </p>
-        <div>
-          <a href="https://github.com/NicholasTrimble/HospitalFlow" target="_blank">View Code</a>
-          <p> </p>
-          <a href="https://hospitalflow.onrender.com/" target="_blank">Live Site</a>
-        </div>
-      </article>
+            <!-- Project 4 -->
+            <article class="project-card">
+              <div class="card-content">
+                <h3>IncidentLink | Emergency Dispatch System</h3>
+                <p class="project-desc">Designed a dispatch system for assigning and tracking emergency resources in real time. Implemented concurrency-safe assignment rules to prevent double-booking and ensure consistent state during simultaneous updates.</p>
+              </div>
+              <div class="card-footer">
+                <p class="project-stack">C# · ASP.NET Core MVC · SignalR · EF Core · PostgreSQL</p>
+                <div class="card-links">
+                  <a href="https://github.com/NicholasTrimble/IncidentLink" target="_blank" rel="noopener">Code</a>
+                  <a href="https://incidentlink.onrender.com/" target="_blank" rel="noopener">Live Site ↗</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-      <article class="project-card">
-        <h3>
-          <a href="https://incidentlink.onrender.com/" target="_blank" rel="noopener">
-            IncidentLink | Emergency Dispatch & Resource Allocation System
-          </a>
-        </h3>
-        <p class="project-desc">
-          Designed a dispatch system for assigning and tracking emergency resources in real time.
-          Implemented concurrency-safe assignment rules to prevent double-booking and ensure consistent state during simultaneous updates.
-        </p>
-        <p class="project-stack">
-          <strong>Stack:</strong> C# · ASP.NET Core MVC · SignalR · EF Core · PostgreSQL
-        </p>
-        <div>
-          <a href="https://github.com/NicholasTrimble/IncidentLink" target="_blank">View Code</a>
-          <p> </p>
-          <a href="https://incidentlink.onrender.com/" target="_blank">Live Site</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <h3>
-          <a href="https://github.com/NicholasTrimble/IT-Service-Desk" target="_blank" rel="noopener">
-            AssetOperations | Work Order & Asset Lifecycle System
-          </a>
-        </h3>
-        <p class="project-desc">
-          Built a structured work order system for tracking asset lifecycle and operational history in a facility environment.
-          Implemented service-layer architecture, authentication via ASP.NET Core Identity, and audit logging for state transitions.
-        </p>
-        <p class="project-stack">
-          <strong>Stack:</strong> C# · ASP.NET Core MVC · EF Core · SQL Server · Identity
-        </p>
-        <div>
-          <a href="https://github.com/NicholasTrimble/IT-Service-Desk" target="_blank">View Repo</a>
-        </div>
-      </article>
-
-      <!-- ===================== -->
-      <!-- PYTHON / DATA SYSTEMS -->
-      <!-- ===================== -->
-
-      <article class="project-card">
-        <h3>
-          <a href="https://skypulse.pythonanywhere.com" target="_blank" rel="noopener">
-            SkyPulse | ETL & Real-Time Data Pipeline System
-          </a>
-        </h3>
-        <p class="project-desc">
-          Built a Python-based ETL pipeline that ingests ISS telemetry data at scheduled intervals and combines it with external weather APIs.
-          Designed to demonstrate data collection, transformation, and visualization workflows.
-        </p>
-        <p class="project-stack">
-          <strong>Stack:</strong> Python · Flask · SQLite · REST APIs
-        </p>
-        <div>
-          <a href="https://skypulse.pythonanywhere.com" target="_blank">Live Site</a>
-          <p> </p>
-          <a href="https://skypulse.pythonanywhere.com" target="_blank">Live Site</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <h3>
-          <a href="https://github.com/NicholasTrimble/MetaNexus" target="_blank" rel="noopener">
-            MetaNexus | Real-Time Data & Collaboration Platform
-          </a>
-        </h3>
-        <p class="project-desc">
-          Built a real-time application using Django and WebSockets for live data updates and user interaction.
-          Processed large external datasets (30k+ records) with API ingestion, rate limiting, and structured storage.
-        </p>
-        <p class="project-stack">
-          <strong>Stack:</strong> Python · Django · Redis · WebSockets · JavaScript
-        </p>
-        <div>
-          <a href="https://github.com/NicholasTrimble/MetaNexus" target="_blank">View Code</a>
-          <p> </p>
-          <a href="https://metanexus.pythonanywhere.com" target="_blank">Live Site</a>
-        </div>
-      </article>
-
-      <!-- ===================== -->
-      <!-- PROTOTYPE / ANALYTICS -->
-      <!-- ===================== -->
-
-      <article class="project-card">
-        <h3>
-          <a href="https://remakeanalytics.pythonanywhere.com" target="_blank" rel="noopener">
-            Retention & Remake Analytics System (Prototype – Live Preview)
-          </a>
-        </h3>
-        <p class="project-desc">
-          Prototype analytics system built to explore automated identification of high-risk accounts using synthetic lab QA data.
-          Generates AI-assisted retention suggestions based on recurring defect patterns and operational trends.
-        </p>
-        <p class="project-stack">
-          <strong>Stack:</strong> Python · Django · Chart.js · Google Gemini API · SQLite
-        </p>
-        <div>
-          <a href="https://github.com/NicholasTrimble/lab_analytics" target="_blank">View Code</a>
-          <p> </p>
-          <a href="https://remakeanalytics.pythonanywhere.com" target="_blank">Live Site</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-    <section id="games">
-      <h2>Pass the time with a game</h2>
-      <p>"These are web browser only games and do not work on mobile."</p>
-      <div class="game-card">
-        <img src="dodgegame.png" alt="Dodge the Block" class="game-thumbnail">
-        <div class="game-info">
-          <a href="https://nicholastrimble.github.io/dodge-game/" target="_blank" class="play-button">Play Now</a>
-          <p>A simple JavaScript game to showcase front-end interaction logic.</p>
         </div>
       </div>
+
+      <!-- BLOCK B: PYTHON & DATA SYSTEMS (DEEP CHARCOAL BLOCK) -->
+      <div class="project-block block-charcoal" data-animate data-stagger>
+        <div class="container">
+          <h2 class="block-section-heading">Python & Data Systems</h2>
+          <p class="block-section-muted">Data engineering pipelines, programmatic transformations, and analytical tracking environments.</p>
+          
+          <div class="projects-grid">
+            <!-- Project 5 -->
+            <article class="project-card">
+              <div class="card-content">
+                <h3>Public Sector Enterprise Data Platform</h3>
+                <p class="project-desc">Built a Python ETL pipeline and Power BI reporting platform using public Arkansas school district financial data. Cleaned and normalized large datasets, modeled relational data, and created KPI dashboards for trend analysis.</p>
+              </div>
+              <div class="card-footer">
+                <p class="project-stack">Python · Pandas · SQL Server · Power BI · REST APIs</p>
+                <div class="card-links">
+                  <a href="https://github.com/NicholasTrimble/Arkansas-School-District-Financial-Analytics-Platform" target="_blank" rel="noopener">View Code ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card">
+              <div class="card-content">
+                <h3>MetaNexus | Real-Time Data & Collaboration Platform</h3>
+                <p class="project-desc">Built a real-time application using Django and WebSockets for live data updates and user interaction. Processed large external datasets (30k+ records) with API ingestion, rate limiting, and structured storage.</p>
+              </div>
+              <div class="card-footer">
+                <p class="project-stack">Python · Django · Redis · WebSockets · JavaScript</p>
+                <div class="card-links">
+                  <a href="https://github.com/NicholasTrimble/MetaNexus" target="_blank" rel="noopener">Code</a>
+                  <a href="https://metanexus.pythonanywhere.com" target="_blank" rel="noopener">Live Site ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 7 -->
+            <article class="project-card">
+              <div class="card-content">
+                <h3>Retention & Remake Analytics System (Prototype)</h3>
+                <p class="project-desc">Prototype analytics system built to explore automated identification of high-risk accounts using synthetic lab QA data. Generates AI-assisted retention suggestions based on recurring defect patterns.</p>
+              </div>
+              <div class="card-footer">
+                <p class="project-stack">Python · Django · Chart.js · Google Gemini API · SQLite</p>
+                <div class="card-links">
+                  <a href="https://github.com/NicholasTrimble/lab_analytics" target="_blank" rel="noopener">Code</a>
+                  <a href="https://remakeanalytics.pythonanywhere.com" target="_blank" rel="noopener">Live Site ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 8 -->
+            <article class="project-card">
+              <div class="card-content">
+                <h3>SkyPulse | ETL & Real-Time Data Pipeline System</h3>
+                <p class="project-desc">Built a Python-based ETL pipeline that ingests ISS telemetry data at scheduled intervals and combines it with external weather APIs. Designed to demonstrate data collection, transformation, and visualization workflows.</p>
+              </div>
+              <div class="card-footer">
+                <p class="project-stack">Python · Flask · SQLite · REST APIs</p>
+                <div class="card-links">
+                  <a href="https://github.com/NicholasTrimble/Weather-app-and-ISS-ETL-Pipeline" target="_blank" rel="noopener">Code</a>
+                  <a href="https://skypulse.pythonanywhere.com" target="_blank" rel="noopener">Live Site ↗</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
     </section>
 
+    <!-- CLEAN LINK FOOTER -->
     <footer class="site-footer">
-      <div class="container">
+      <div class="container footer-content">
+        <div class="footer-contact-links">
+          <a href="https://github.com/NicholasTrimble" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/nick-trimble" target="_blank">LinkedIn</a>
+          <a href="mailto:nicktrimble07@gmail.com">Email Me</a>
+        </div>
         <p>&copy; <span id="year"></span> Nicholas Trimble — Built with HTML, CSS & JavaScript</p>
       </div>
     </footer>
   </main>
 
   <script src="script.js" defer></script>
-  <script src="lightning.js" defer></script>
 </body>
 </html>
